@@ -1,0 +1,95 @@
+.spin-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .uil-spin-css {
+        background: none;
+        width: 256px;
+        height: 256px;
+        padding: 24px;
+        margin: -96px -96px -88px;
+        transform: scale(0.25);
+        >div {
+            width: 24px;
+            height: 24px;
+            margin-left: 34px;
+            margin-top: 32px;
+            position: absolute;
+            > div {
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                background: #3aaa35;
+            }
+        }
+        >div:nth-of-type(1) {
+            transform: translate(84px, 84px) rotate(45deg) translate(70px, 0);
+            >div {
+                animation: uil-spin-css 1s linear infinite;
+                animation-delay: 0s;
+            }
+        }
+        >div:nth-of-type(2) {
+            transform: translate(84px, 84px) rotate(90deg) translate(70px, 0);
+            >div {
+                animation: uil-spin-css 1s linear infinite;
+                animation-delay: 0.12s;
+            }
+        }
+        >div:nth-of-type(3) {
+            transform: translate(84px, 84px) rotate(135deg) translate(70px, 0);
+            >div {
+                animation: uil-spin-css 1s linear infinite;
+                animation-delay: 0.25s;
+            }
+        }
+        >div:nth-of-type(4) {
+            transform: translate(84px, 84px) rotate(180deg) translate(70px, 0);
+            >div {
+                animation: uil-spin-css 1s linear infinite;
+                animation-delay: 0.37s;
+            }
+        }
+        >div:nth-of-type(5) {
+            transform: translate(84px, 84px) rotate(225deg) translate(70px, 0);
+            >div {
+                animation: uil-spin-css 1s linear infinite;
+                animation-delay: 0.5s;
+            }
+        }
+        >div:nth-of-type(6) {
+            transform: translate(84px, 84px) rotate(270deg) translate(70px, 0);
+            >div {
+                animation: uil-spin-css 1s linear infinite;
+                animation-delay: 0.62s;
+            }
+        }
+        >div:nth-of-type(7) {
+            transform: translate(84px, 84px) rotate(315deg) translate(70px, 0);
+            >div {
+                animation: uil-spin-css 1s linear infinite;
+                animation-delay: 0.75s;
+            }
+        }
+        >div:nth-of-type(8) {
+            transform: translate(84px, 84px) rotate(360deg) translate(70px, 0);
+            >div {
+                animation: uil-spin-css 1s linear infinite;
+                animation-delay: 0.87s;
+            }
+        }
+    }
+}
+
+@keyframes uil-spin-css {
+    0% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 0.1;
+        transform: scale(1);
+    }
+}
