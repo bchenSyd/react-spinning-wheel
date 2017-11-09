@@ -11,6 +11,10 @@ class RSNRadioPlayer extends React.Component{
             isPlaying: false,
         }
     }
+    /**
+     * here I'm injecting a global soundmanger2 object and do all the dirty stuff for you
+     * @public
+     */
     componentDidMount() {
         if (!window.soundManager) {
             const script = document.createElement('script');
