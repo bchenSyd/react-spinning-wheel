@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"styleguidist server"
+    "start":"styleguidist server",
+    "build":"styleguidist build"
   },
   "author": "",
   "license": "ISC",

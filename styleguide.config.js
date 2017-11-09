@@ -23,5 +23,6 @@ module.exports = {
             components: 'src/components/*.js'
         }
     ],
-    webpackConfig: require('./sample/webpack.config.js')
+    webpackConfig: require('./sample/webpack.config.js'),
+    serverPort:3000
 }
