@@ -1,3 +1,5 @@
+const path=require('path');
+
 module.exports = {
     sections: [
         {
@@ -24,5 +26,8 @@ module.exports = {
         }
     ],
     webpackConfig: require('./sample/webpack.config.js'),
+    require: [
+        path.join(__dirname, 'src/style-guidist/styles.less'),
+    ],
     serverPort:3000
 }
