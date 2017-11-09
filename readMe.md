@@ -1,0 +1,1 @@
+### in sample, you can share everything from parent folder except `webpack` and `wds`
