@@ -1,1 +1,1 @@
-## installation
+`yarn add react-components` or `npm install --save react-components`

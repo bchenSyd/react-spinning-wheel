@@ -1,7 +1,7 @@
 import React from 'react';
 
 const rsnRadioUrl = 'http://rsncast.dyn.rsn.net.au:6330/rsn';
-class FKRSNRadioPlayer extends React.Component{
+class RSNRadioPlayer extends React.Component{
     constructor() {
         super();
         this.onPlayButtonClicked = this.onPlayButtonClicked.bind(this, Date.now());
@@ -63,4 +63,4 @@ class FKRSNRadioPlayer extends React.Component{
 
 };
 
-export default FKRSNRadioPlayer;
+export default RSNRadioPlayer;

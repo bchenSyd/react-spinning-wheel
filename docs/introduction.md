@@ -1,1 +1,1 @@
-## this is the introduction page
+`react-components` is a collections of react components

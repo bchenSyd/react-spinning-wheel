@@ -20,7 +20,8 @@ module.exports = {
         {
             name: 'UI Components',
             content: 'docs/ui.md',
-            Components: 'src/components/*.js'
+            components: 'src/components/*.js'
         }
-    ]
+    ],
+    webpackConfig: require('./sample/webpack.config.js')
 }

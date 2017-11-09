@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --color --progress --bail --port 3000"
+    "start":"styleguidist server"
   },
   "author": "",
   "license": "ISC",
