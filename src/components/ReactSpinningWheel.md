@@ -1,10 +1,15 @@
 ```jsx static
-// style.less
+// ../style-guidist/styles.less
 .overrlap-with-content{
     height:0;
     position: relative;
     top: 60px;
 }
+//../style-guidist/setup.js
+const mock={
+    name:'bchen'
+}
+export default mock;
 // component.js
 import {ReactSpinningWheel} from 'react-components';
 
@@ -14,7 +19,10 @@ const component= ()=>(
 ```
 live example:
 ```javascript
+const styles=require('../style-guidist/styles.less');
+const data = require('../style-guidist/setup').default;
 <div>
+    <div>dynamically add module : {data.name}</div>
     <div className="spinner-example-1">
         <ReactSpinningWheel />
         <h1>default creat a gap. to remove the gap, you need to set {'{'} position: relative; height:0; top: 100px {'}'}
