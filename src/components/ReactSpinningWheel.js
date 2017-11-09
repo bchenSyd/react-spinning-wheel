@@ -1,4 +1,5 @@
 import  React from 'react';
+import '../styles/spinner.less';
 
 export default function FKLoadingTemplate(props) {
     const {classNames} = props;

@@ -45,6 +45,11 @@ var config = {
       }
     ]
   },
+  resolve:{
+    alias:{
+      "react-components": path.resolve('../src/index.js'),
+    }
+  }
 };
 
 
