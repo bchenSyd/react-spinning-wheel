@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "styleguidist server",
-    "build": "styleguidist build"
+    "build": "styleguidist build",
+    "push2heroku":"sh deploy.sh"
   },
   "author": "bochen2014@yahoo.com",
   "license": "ISC",
