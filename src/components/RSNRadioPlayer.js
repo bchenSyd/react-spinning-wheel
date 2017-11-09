@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/rsnRadioPlayer.less';
 
 const rsnRadioUrl = 'http://rsncast.dyn.rsn.net.au:6330/rsn';
 class RSNRadioPlayer extends React.Component{
@@ -54,7 +55,7 @@ class RSNRadioPlayer extends React.Component{
     render() {
         const { isPlaying } = this.state;
         return <div>
-            <span onClick={this.onPlayButtonClicked} >
+            <span className="live-radio" onClick={this.onPlayButtonClicked} >
                 LIVE RACING - Listen here
                 {isPlaying && <span className="speaker-icon" />}
             </span>

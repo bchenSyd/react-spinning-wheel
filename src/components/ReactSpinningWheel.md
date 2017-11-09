@@ -1,5 +1,18 @@
-ReactSpinningWheel example:
+```jsx static
+// style.less
+.overrlap-with-content{
+    height:0;
+    position: relative;
+    top: 60px;
+}
+// component.js
+import {ReactSpinningWheel} from 'react-components';
 
+const component= ()=>(
+    <ReactSpinningWheel  classNames=".overrlap-with-content"/>
+)
+```
+live example:
 ```javascript
 <div>
     <div className="spinner-example-1">

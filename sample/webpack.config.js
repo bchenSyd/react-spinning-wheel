@@ -42,7 +42,11 @@ var config = {
             },
             "less-loader"]
         })
-      }
+      },
+      {
+        test: /\.jpe?g$|\.gif$|\.png$/i,
+        use: 'file-loader',
+      },
     ]
   },
   resolve:{
