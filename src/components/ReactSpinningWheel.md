@@ -14,7 +14,7 @@ export default mock;
 import {ReactSpinningWheel} from 'react-components';
 
 const component= ()=>(
-    <ReactSpinningWheel  classNames=".overrlap-with-content"/>
+    <ReactSpinningWheel  classNames="overrlap-with-content"/>
 )
 ```
 live example:

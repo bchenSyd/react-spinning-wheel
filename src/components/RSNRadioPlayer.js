@@ -2,6 +2,9 @@ import React from 'react';
 import '../styles/rsnRadioPlayer.less';
 
 const rsnRadioUrl = 'http://rsncast.dyn.rsn.net.au:6330/rsn';
+/**
+ * radio source provided by [rsncast](http://rsncast.dyn.rsn.net.au:6330/rsn)
+ */
 class RSNRadioPlayer extends React.Component{
     constructor() {
         super();
@@ -13,6 +16,7 @@ class RSNRadioPlayer extends React.Component{
     }
     /**
      * here I'm injecting a global soundmanger2 object and do all the dirty stuff for you
+     * @param
      * @public
      */
     componentDidMount() {
@@ -32,6 +36,7 @@ class RSNRadioPlayer extends React.Component{
             document.head.appendChild(script);
         }
     }
+
     componentWillUnmount() {
         const { soundId } = this.state;
         const soundManager = window.soundManager;
