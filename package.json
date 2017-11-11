@@ -1,12 +1,19 @@
 {
-  "name": "spining-wheel",
+  "name": "react-spinning-wheel",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "style": "dist/style.css",
+  "files": [
+    "*.md",
+    "dist"
+  ],
   "scripts": {
-    "start": "styleguidist server",
-    "build": "styleguidist build",
-    "push2heroku":"sh deploy.sh"
+    "start-style-guide": "styleguidist server",
+    "build-style-guide": "styleguidist build",
+    "push2heroku": "sh deploy.sh",
+    "prepublish": "set NODE_ENV=production& npm run clean& webpack --progress",
+    "clean": "rm -rf dist/"
   },
   "author": "bochen2014@yahoo.com",
   "license": "ISC",
@@ -32,6 +39,8 @@
     "postcss-loader": "^2.0.8",
     "react-styleguidist": "^6.0.33",
     "style-loader": "^0.19.0",
+    "uglifyjs-webpack-plugin": "^1.0.1",
+    "url-loader": "^0.6.2",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4"
   }
