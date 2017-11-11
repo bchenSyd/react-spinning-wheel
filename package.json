@@ -11,6 +11,7 @@
   "scripts": {
     "build":"npm run clean& webpack --progress",
     "style-guidist":"styleguidist server",
+    "deploy": "styleguidist build& sh deploy.sh",
     "prepublish": "set NODE_ENV=production& npm run clean& webpack --progress",
     "clean": "rm -rf dist/"
   },
