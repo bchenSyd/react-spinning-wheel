@@ -26,5 +26,5 @@ module.exports = {
         }
     ],
     webpackConfig: require('./webpack.config.js'),
-    serverPort:3000
+    serverPort:6060
 }

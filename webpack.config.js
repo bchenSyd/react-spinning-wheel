@@ -12,9 +12,10 @@ const config = {
     },
     entry: './src/index.js',
     output: {
-        path: path.resolve('./dist'),
+        libraryTarget: 'umd',
+        library: 'react-spinning-wheel',
         filename: 'index.js',
-        publicPath: '/'
+        path:  path.resolve('./dist'),
     },
     plugins: [
         new ExtractTextPlugin('style.css')
@@ -64,7 +65,7 @@ const config = {
 };
 
 if (env === 'production') {
-    config.plugins.push(new UglifyJSPlugin());
+  //  config.plugins.push(new UglifyJSPlugin());
 } else {
     config.plugins.push(new webpack.HotModuleReplacementPlugin());
 }
