@@ -9,11 +9,8 @@
     "dist"
   ],
   "scripts": {
-    "start-style-guide": "styleguidist server",
-    "build-style-guide": "styleguidist build",
-    "push2heroku": "sh deploy.sh",
-    "prepublish": "set NODE_ENV=production& npm run clean& webpack --progress",
-    "clean": "rm -rf dist/"
+    "start": "styleguidist server",
+    "build": "styleguidist build"
   },
   "author": "bochen2014@yahoo.com",
   "license": "ISC",
