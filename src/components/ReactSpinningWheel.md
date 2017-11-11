@@ -29,7 +29,7 @@ const data = require('../style-guidist/setup').default;
           like the example shown below</h1>
     </div>
     <div className="spinner-example-2">
-        <ReactSpinningWheel classNames="loading-overlap"/>
+        <ReactSpinningWheel className="loading-overlap"/>
         <h1>in your styles/index.less file, you cannot use @import 'spinner' because *.less is not registered as a default extention<br/>
             only js and json are default extensions
         </h1>

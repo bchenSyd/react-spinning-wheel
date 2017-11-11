@@ -6,8 +6,8 @@ import '../styles/spinner.less';
  * * see examples on how to disable the default height
  */
 const ReactSpinningWheel = (props) =>{
-    const {classNames} = props;
-    return <div className={`spin-wrapper ${classNames ? classNames : ''}`}>
+    const {className} = props;
+    return <div className={`spin-wrapper ${className ? className : ''}`}>
         <div className="uil-spin-css">
             <div>
                 <div></div>
@@ -39,9 +39,9 @@ const ReactSpinningWheel = (props) =>{
 
 ReactSpinningWheel.propTypes={
     /** pass in a class to override spinner default class */
-    classNames: PropTypes.string
+    className: PropTypes.string
 }
 ReactSpinningWheel.defaultProps={
-    classNames: '',
+    className: '',
 }
 export default ReactSpinningWheel;
