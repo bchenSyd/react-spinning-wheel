@@ -15,7 +15,7 @@ const config = {
         libraryTarget: 'umd',
         library: 'react-spinning-wheel',
         filename: 'index.js',
-        path:  path.resolve('./dist'),
+        path: path.resolve('./dist'),
     },
     plugins: [
         new ExtractTextPlugin('style.css')
@@ -65,7 +65,7 @@ const config = {
 };
 
 if (env === 'production') {
-  //  config.plugins.push(new UglifyJSPlugin());
+    config.plugins.push(new UglifyJSPlugin());
 } else {
     config.plugins.push(new webpack.HotModuleReplacementPlugin());
 }
