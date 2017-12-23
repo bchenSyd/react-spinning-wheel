@@ -1,4 +1,4 @@
-!styleguide/index.js
-!styleguide/package.json
-styleguide/
+!heroku/index.js
+!heroku/package.json
+heroku/
 dist/

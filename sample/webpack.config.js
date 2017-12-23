@@ -51,7 +51,7 @@ var config = {
   },
   resolve:{
     alias:{
-      "react-components": path.resolve('../src/index.js'),
+      "react-spinning-wheel": path.resolve('../src/index.js'),
     }
   }
 };

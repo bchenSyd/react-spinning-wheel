@@ -1,5 +1,5 @@
 ```jsx static
-import {RSNRadioPlayer} from 'react-components';
+import {RSNRadioPlayer} from 'react-spinning-wheel';
 
 const component= ()=>(
     <RSNRadioPlayer  />

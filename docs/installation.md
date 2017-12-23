@@ -1,1 +1,1 @@
-`yarn add react-components` or `npm install --save react-components`
+`yarn add react-spinning-wheel` or `npm install --save react-spinning-wheel`

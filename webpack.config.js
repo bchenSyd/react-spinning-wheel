@@ -6,7 +6,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const env = process.env.NODE_ENV;
 const config = {
-    devtool: env === 'production' ? '' : 'source-map',
+    devtool: env === 'production' ? '' : 'cheap-module-source-map',
     devServer: {
         historyApiFallback: true
     },
@@ -59,7 +59,7 @@ const config = {
     },
     resolve: {
         alias: {
-            "react-components": path.resolve('../src/index.js'),
+            "react-spinning-wheel": path.resolve('../src/index.js'),
         }
     }
 };

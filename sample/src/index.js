@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import {ReactSpinner} from 'react-components';
+import {ReactSpinner} from 'react-spinning-wheel';
 
 import './index.less';
 

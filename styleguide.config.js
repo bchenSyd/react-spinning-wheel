@@ -26,5 +26,6 @@ module.exports = {
         }
     ],
     webpackConfig: require('./webpack.config.js'),
+    styleguideDir:'heroku',
     serverPort:6060
 }

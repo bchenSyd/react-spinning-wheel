@@ -11,7 +11,7 @@ const mock={
 }
 export default mock;
 // component.js
-import {ReactSpinningWheel} from 'react-components';
+import {ReactSpinningWheel} from 'react-spinning-wheel';
 
 const component= ()=>(
     <ReactSpinningWheel  classNames="overrlap-with-content"/>
