@@ -1,4 +1,5 @@
+heroku/*
 !heroku/index.js
 !heroku/package.json
-heroku/
+!heroku/.gitignore
 dist/
