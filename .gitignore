@@ -1,4 +1,5 @@
 heroku/*
+heroku/build/*
 !heroku/index.js
 !heroku/package.json
 !heroku/.gitignore
