@@ -1,32 +1,30 @@
 {
   "name": "react-spinning-wheel",
-  "version": "1.1.4",
-  "description": "remove dependencies section when you publish",
-  "main": "dist/index.js",
-  "style": "dist/style.css",
-  "files": [
-    "*.md",
-    "dist"
-  ],
+  "private": true,
+  "version": "1.1.5",
+  "description": "useful react component libraries. don't worry, only used ones get bundled into your package",
   "scripts": {
-    "build": "npm run clean& webpack --progress",
+    "build": "(npm run clean; webpack --progress; npm run build:copy-files)",
+    "build:copy-files":"babel-node ./scripts/copy-files.js",
     "style-guidist": "styleguidist server",
     "deploy": "styleguidist build& sh deploy.sh",
-    "prepublish": "set NODE_ENV=production& npm run clean& webpack --progress",
-    "clean": "rm -rf dist/"
+    "postpublish": "(export NODE_ENV=production; npm run build; cd build; npm publish)",
+    "clean": "rm -rf build/"
   },
   "author": "bochen2014@yahoo.com",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bochen2014/react-spinning-wheel.git"
   },
-  "license": "ISC",
+  "license": "MIT",
+  "homepage": "https://bo-react-components.herokuapp.com/",
   "peerDependencies": {
     "react": ">15.0",
     "react-dom": ">15.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.6",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-async-to-generator": "^6.24.1",
@@ -40,15 +38,13 @@
     "less": "^3.0.0-alpha.3",
     "less-loader": "^4.0.5",
     "postcss-loader": "^2.0.8",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
     "react-styleguidist": "^6.0.33",
     "style-loader": "^0.19.0",
     "uglifyjs-webpack-plugin": "^1.0.1",
     "url-loader": "^0.6.2",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4"
-  },
-  "dependencies": {
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1"
   }
 }

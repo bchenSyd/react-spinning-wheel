@@ -15,7 +15,7 @@ const config = {
         libraryTarget: 'umd',
         library: 'react-spinning-wheel',
         filename: 'index.js',
-        path: path.resolve('./dist'),
+        path: path.resolve('./build/dist'),
     },
     plugins: [
         new ExtractTextPlugin('style.css')
