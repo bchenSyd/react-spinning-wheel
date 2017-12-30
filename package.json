@@ -1,14 +1,14 @@
 {
   "name": "react-spinning-wheel",
   "private": true,
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "useful react component libraries. don't worry, only used ones get bundled into your package",
   "scripts": {
-    "build": "(npm run clean; webpack --progress; npm run build:copy-files)",
+    "build": "npm run clean&& webpack --progress; npm run build:copy-files",
     "build:copy-files":"babel-node ./scripts/copy-files.js",
     "style-guidist": "styleguidist server",
     "deploy": "styleguidist build& sh deploy.sh",
-    "postpublish": "(export NODE_ENV=production; npm run build; cd build; npm publish)",
+    "postpublish": "export NODE_ENV=production&& npm run build; cd build; npm publish",
     "clean": "rm -rf build/"
   },
   "author": "bochen2014@yahoo.com",

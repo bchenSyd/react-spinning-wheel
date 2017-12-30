@@ -1,0 +1,60 @@
+
+.material-input{
+    font-size: 16px;
+    line-height: 24px;
+    width: 256px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    font-family: Roboto, sans-serif;
+    transition: height 200ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    cursor: auto;
+    .hint{
+        position: absolute;
+        opacity: 1;
+        color: rgba(0, 0, 0, 0.3);
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        bottom: 12px;
+    }
+    input{
+        padding: 0px;
+        position: relative;
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0);
+        color: rgba(0, 0, 0, 0.87);
+        opacity: 1;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        height: 100%;
+    }
+    
+    .underline{
+        border-top: none rgb(224, 224, 224);
+        border-left: none rgb(224, 224, 224);
+        border-right: none rgb(224, 224, 224);
+        border-bottom: 1px solid rgb(224, 224, 224);
+        bottom: 8px;
+        box-sizing: content-box;
+        margin: 0px;
+        position: absolute;
+        width: 100%;
+    }
+    .underline-focused{
+        border-top: none rgb(0, 188, 212);
+        border-left: none rgb(0, 188, 212);
+        border-right: none rgb(0, 188, 212);
+        border-bottom: 2px solid rgb(0, 188, 212);
+        bottom: 8px;
+        box-sizing: content-box;
+        margin: 0px;
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        &.focus{
+            transform: scaleX(1) !important;
+        }
+    }
+}
