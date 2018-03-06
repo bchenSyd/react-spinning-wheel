@@ -19,3 +19,5 @@ const Component = ()=>(
 )
 export default Component;
 ```
+// Load a single method for smaller builds with browserify/rollup/webpack.
+var extend = require('lodash/fp/extend');
